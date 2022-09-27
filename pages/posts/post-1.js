@@ -10,8 +10,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Welcome to my site</h1>
-        <Link href="/posts">Check out my posts</Link>
+        <h1>This is my first post</h1>
+        <Link href="/posts">Go back</Link>
       </main>
 
       <footer>

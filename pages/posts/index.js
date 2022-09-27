@@ -10,8 +10,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>Welcome to my site</h1>
-        <Link href="/posts">Check out my posts</Link>
+        <h1>This is a file based route to /posts</h1>
+        <Link href="/">Go back</Link>
+        <Link href="/posts/post-1">Post 1</Link>
       </main>
 
       <footer>
