@@ -1,16 +1,26 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Deans Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Welcome to my site</h1>
+        <div className="w-1/2">
+          <Image
+            src="/images/profile.png" // Route of the image file
+            height={540} // Desired size with correct aspect ratio
+            width={540} // Desired size with correct aspect ratio
+            alt="Dean"
+            layout="intrinsic"
+          ></Image>
+        </div>
+        <h1 className="text-red-500 text-3xl font-ibm">Welcome to my site</h1>
         <Link href="/posts">Check out my posts</Link>
       </main>
 
