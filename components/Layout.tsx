@@ -23,9 +23,8 @@ const Layout = ({ children }) => {
     //     <link rel="icon" href="/favicon.ico" />
     //   </Head>
     <div className="w-screen h-screen flex flex-col justify-between items-center">
-      <nav className="flex gap-2">
+      <nav className="flex gap-2 h-10 items-center">
         {navigation.map((link, i) => {
-          console.log(link.href, router.asPath, link.href === router.asPath);
           return (
             <Link key={i} href={link.href}>
               <p
@@ -40,9 +39,11 @@ const Layout = ({ children }) => {
           );
         })}
       </nav>
-      <main>{children}</main>
+      <main className="max-w-lg">{children}</main>
       <footer>
-        <div className="w-screen text-center">my footer</div>
+        <div className="w-screen text-center h-10 items-center">
+          copyright dean kemball
+        </div>
       </footer>
     </div>
   );

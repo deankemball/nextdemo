@@ -22,6 +22,9 @@ export default function Home({ allPostsData }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full h-full">
+        <h1 className="text-3xl font-ibm font-semibold">
+          Blog by Dean Kemball
+        </h1>
         <div className="w-full flex justify-center">
           <Image
             src="/images/profile.png" // Route of the image file
@@ -31,24 +34,11 @@ export default function Home({ allPostsData }) {
             layout="intrinsic"
           ></Image>
         </div>
-        <h1 className="text-red-500 text-3xl font-ibm">Welcome to my site</h1>
-        <Link href="/blog">Check out my posts</Link>
-        <section>
-          <h2>Blog</h2>
-          <ul>
-            {allPostsData.map(({ id, date, title, body }) => (
-              <li key={id}>
-                {title}
-                <br />
-                {id}
-                <br />
-                {date}
-                <br />
-                {body}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <Link href="/blog">
+          <p className="w-full text-right font-ibm font-semibold cursor-pointer">
+            Check out my posts
+          </p>
+        </Link>
       </main>
     </Layout>
   );
